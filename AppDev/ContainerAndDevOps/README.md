@@ -14,3 +14,4 @@ ssh demouser@<<Public IP>>
 ```
 curl -o https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/scripts/00.getScripts.sh | bash
 ```
+
