@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: [LOGINSERVER].azurecr.io/content-web
+  repository: fabrikammedical1573218264.azurecr.io/content-web
   tag: latest
   pullPolicy: Always
 
