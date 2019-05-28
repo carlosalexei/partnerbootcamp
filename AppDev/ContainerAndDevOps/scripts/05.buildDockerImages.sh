@@ -1,4 +1,4 @@
-BASE_DIR=~/partnerbootcamp/AppDev/ContainerAndDevOps/src
+BASE_DIR=~/FabMedical
 cd $BASE_DIR/content-api
 docker build -t content-api .
 
