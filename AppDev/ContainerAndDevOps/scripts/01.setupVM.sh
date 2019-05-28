@@ -3,11 +3,23 @@
 # echo 'export PATH="/home/demouser/.linuxbrew/bin:$PATH"' >> ~/.bash_profile
 # brew update
 # brew install jq
+echo "*************************************************"
+echo "*** Update apt-get                            ***"
+echo "*************************************************"
+
+sudo apt-get update && sudo apt-get -y upgrade
 
 echo "*************************************************"
 echo "*** Installing jq for processing JSON on BASH ***"
 echo "*************************************************"
 sudo apt install jq
+
+echo "******************************************************"
+echo "*** Update npm                                     ***"
+echo "******************************************************"
+sudo npm install -g npm
+sudo chown -R $USER:$(id -gn $USER) /home/demouser/.config
+npm audit fix
 
 echo "******************************************************"
 echo "*** Installing bower for managing packages on web  ***"
