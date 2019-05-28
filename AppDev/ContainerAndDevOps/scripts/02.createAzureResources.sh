@@ -35,6 +35,12 @@ echo "--------------"
 APP_ID=($(echo $SP_JSON | jq -r '.appId'))
 PASSWORD=($(echo $SP_JSON | jq -r '.password'))
 
+echo "**********************************************" >> ~/azureResources.log
+echo "*** APP_ID   : $APP_ID  " >> ~/azureResources.log
+echo "*** PASSWORD : $PASSWORD" >> ~/azureResources.log
+echo "**********************************************" >> ~/azureResources.log
+
+
 sleep 60s
 
 echo "**********************************************"
