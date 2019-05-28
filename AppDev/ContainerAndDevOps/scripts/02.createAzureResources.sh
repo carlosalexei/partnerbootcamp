@@ -36,14 +36,17 @@ APP_ID=($(echo $SP_JSON | jq -r '.appId'))
 PASSWORD=($(echo $SP_JSON | jq -r '.password'))
 
 echo "=============================================="
+echo "SUBS ID : " $ID
 echo "APP_ID  : " $APP_ID
 echo "PASSWORD: " $PASSWORD
-echo "==============================================\n\n"
-
+echo "=============================================="
+echo ""
 echo "**********************************************"
 echo "*** Creating an Azure Kubernetes Services  ***"
 echo "**********************************************"
-az aks create -n $AKS_NAME -g $RESOURCE_GROUP_NAME --node-count 2 --node-vm-size Standard_D2s_v3 --generate-ssh-keys --service-principal $APP_ID --client-secret $PASSWORD
+AKS_CMD="az aks create -n $AKS_NAME -g $RESOURCE_GROUP_NAME --node-count 2 --node-vm-size Standard_D2s_v3 --generate-ssh-keys --service-principal $APP_ID --client-secret $PASSWORD"
+echo $AKS_CMD
+$AKS_CMD
 
 echo "**********************************************"
 echo "*** Installing kubectl                     ***"
