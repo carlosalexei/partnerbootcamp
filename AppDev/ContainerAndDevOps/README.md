@@ -24,8 +24,7 @@ curl -o https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/Ap
 Run the following script 01.setupVM.sh and when prompted confirm by presing <Enter>.
 
 ```
-cd scripts
-./01.setupVM.sh
+~/scripts/01.setupVM.sh
 ```
  
 After running the first script you need to restart your session, so exit and connect again to the jump box
@@ -69,7 +68,15 @@ az --version
 ```
 
 ## Step 6 - Create Azure Resources 
+During the lab you will need several Azure Resources:
+* ACR - Azure Container Registry - To Store your Docker images
+* AKS - Azure Kubernetes Service - This is a managed Kubernetes service that let you quickly deploy and manage clusters. 
+* Azure AD Service Principal - It is a security identity used to run processes or services and allow you to integrate Identity Management handled by Azure Active Directory.
 
+To create Azure resources run script 02.createAzureResources.sh
+```
+~/scripts/02.createAzureResources.sh
+```
 
 ## Step 7 - Continue with the lab 
 

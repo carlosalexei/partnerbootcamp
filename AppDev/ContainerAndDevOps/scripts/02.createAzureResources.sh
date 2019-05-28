@@ -1,4 +1,4 @@
-SUFIX=001
+SUFIX=$RANDOM
 LOCATION=australiaeast
 NAME=FabrikamMedical
 RESOURCE_GROUP_NAME=$NAME"_RG"
