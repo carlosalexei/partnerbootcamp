@@ -17,7 +17,7 @@ ssh demouser@<<Public IP>>
 ## Step 3 - Get helper scripts 
 Once you have an open a session, run the following command to get helper scripts:
 ```
-curl -o https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/scripts/00.getScripts.sh | bash
+curl -s https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/scripts/00.getScripts.sh | bash
 ```
 
 ## Step 4 - Run setup script
