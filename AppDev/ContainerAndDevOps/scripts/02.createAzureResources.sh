@@ -35,12 +35,8 @@ echo "--------------"
 APP_ID=($(echo $SP_JSON | jq -r '.appId'))
 PASSWORD=($(echo $SP_JSON | jq -r '.password'))
 
-echo "=============================================="
-echo "SUBS ID : " $ID
-echo "APP_ID  : " $APP_ID
-echo "PASSWORD: " $PASSWORD
-echo "=============================================="
-echo ""
+sleep 60s
+
 echo "**********************************************"
 echo "*** Creating an Azure Kubernetes Services  ***"
 echo "**********************************************"
