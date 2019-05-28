@@ -1,5 +1,7 @@
 BASE_DIR=~/FabMedical
 cd $BASE_DIR/content-api
+curl -O https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/src/content-api/Dockerfile
+
 docker build -t content-api .
 
 cd $BASE_DIR/content-web
