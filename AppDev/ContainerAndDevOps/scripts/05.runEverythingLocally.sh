@@ -1,14 +1,14 @@
+BASE_DIR=~/partnerbootcamp/AppDev/ContainerAndDevOps/src
+cd $BASE_DIR/content-api
+docker build -t content-api .
 
-cd~
-mkdir code
-cd code
-git clone https://PartnerBootCamp@dev.azure.com/PartnerBootCamp/FabrikamMedical/_git/content-api
-git clone https://PartnerBootCamp@dev.azure.com/PartnerBootCamp/FabrikamMedical/_git/content-web
-git clone https://PartnerBootCamp@dev.azure.com/PartnerBootCamp/FabrikamMedical/_git/content-init
+cd $BASE_DIR/content-web
+docker build -t content-web .
 
-mkdir ~/code/content-api/data
+cd $BASE_DIR/content-init
+docker build -t content-init .
 
-cp scripts/docker-compose.init.yml ~/code
-cp scripts/docker-compose.yml ~/code
-
-docker-compose -f docker-compose.yml -f docker-compose.init.yml -p fabmedical up -d
+docker network create fabmedical
+docker run --name mongo --net fabmedical -p 27017:27017 -d mongo
+docker run --name api --net fabmedical -p 3001:3001 -e MONGODB_CONNECTION=mongodb://mongo:27017/contentdb -d content-api
+docker run --name web --net fabmedical -p 3000:3000 -d -e CONTENT_API_URL=http://api:3001 content-web

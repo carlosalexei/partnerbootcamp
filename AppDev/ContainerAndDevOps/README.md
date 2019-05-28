@@ -91,8 +91,11 @@ To download application source code and unpack it run script 03.downloadCode.sh
 ~/scripts/03.downloadCode.sh
 ```
 
+## Step 8 - DevOps configuration
 
 
-## Step 8 - Continue with the lab 
 
-[Step-by-step Guide](https://cloudworkshop.blob.core.windows.net/containers-devops/Hands-on%20lab/HOL%20step-by-step%20-%20Containers%20and%20DevOps%20-%20Developer%20edition.html)
+## Step 9 - Continue with the lab 
+
+Continue with following the step on the [Step-by-step Guide](https://cloudworkshop.blob.core.windows.net/containers-devops/Hands-on%20lab/HOL%20step-by-step%20-%20Containers%20and%20DevOps%20-%20Developer%20edition.html)
+
