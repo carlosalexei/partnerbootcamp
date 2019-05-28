@@ -84,6 +84,15 @@ To create Azure resources run script 02.createAzureResources.sh
 ~/scripts/02.createAzureResources.sh
 ```
 
-## Step 7 - Continue with the lab 
+## Step 7 - Download application code
+
+To download application source code and unpack it run script 03.downloadCode.sh
+```
+~/scripts/03.downloadCode.sh
+```
+
+
+
+## Step 8 - Continue with the lab 
 
 [Step-by-step Guide](https://cloudworkshop.blob.core.windows.net/containers-devops/Hands-on%20lab/HOL%20step-by-step%20-%20Containers%20and%20DevOps%20-%20Developer%20edition.html)
