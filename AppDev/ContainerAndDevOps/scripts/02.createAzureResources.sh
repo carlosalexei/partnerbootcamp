@@ -29,11 +29,16 @@ ID_STR=$(az account show --query id)
 ID="${ID_STR%\"}"
 ID="${ID#\"}"
 echo $ID
-SP_JSON=$(az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/$ID" --name="http://Fabmedical-sp-carlosmr")
+SP_JSON=$(az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/$ID" --name="http://Fabmedical-sp-$SUFIX")
 echo $SP_JSON
 echo "--------------"
 APP_ID=($(echo $SP_JSON | jq -r '.appId'))
 PASSWORD=($(echo $SP_JSON | jq -r '.password'))
+
+echo "=============================================="
+echo "APP_ID  : " $APP_ID
+echo "PASSWORD: " $PASSWORD
+echo "==============================================\n\n"
 
 echo "**********************************************"
 echo "*** Creating an Azure Kubernetes Services  ***"
