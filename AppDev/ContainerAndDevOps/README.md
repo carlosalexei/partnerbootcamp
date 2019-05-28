@@ -73,6 +73,12 @@ During the lab you will need several Azure Resources:
 * AKS - Azure Kubernetes Service - This is a managed Kubernetes service that let you quickly deploy and manage clusters. 
 * Azure AD Service Principal - It is a security identity used to run processes or services and allow you to integrate Identity Management handled by Azure Active Directory.
 
+Before you would be able to create any Azure resource, your should prove you have the rights to do it. Use az login and follow the instructions to get access to the Azure subscription.
+
+```
+az login
+```
+
 To create Azure resources run script 02.createAzureResources.sh
 ```
 ~/scripts/02.createAzureResources.sh
