@@ -8,6 +8,7 @@ curl -O https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/Ap
 curl -O https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/scripts/06.runEverythingOnDocker.sh
 curl -O https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/scripts/07.stopEverythingOnDocker.sh
 curl -O https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/scripts/08.runOnDockerCompose.sh
+curl -O 
 chmod 700 01.setupVM.sh
 chmod 700 02.createAzureResources.sh
 chmod 700 03.downloadCode.sh
