@@ -17,3 +17,5 @@ chmod 700 06.runEverythingOnDocker.sh
 chmod 700 07.stopEverythingOnDocker.sh
 chmod 700 08.runOnDockerCompose.sh
 
+
+
