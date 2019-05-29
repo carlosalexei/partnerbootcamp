@@ -5,6 +5,10 @@ curl -O https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/Ap
 docker build -t content-api .
 
 cd $BASE_DIR/content-web
+cd data-access
+curl -O https://raw.githubusercontent.com/carlosalexei/partnerbootcamp/master/AppDev/ContainerAndDevOps/src/content-web/data-access/index.js
+cd..
+
 docker build -t content-web .
 
 cd $BASE_DIR/content-init
