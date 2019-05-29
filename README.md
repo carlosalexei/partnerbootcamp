@@ -1,2 +1,6 @@
 # Partner Boot Camp
-Content to improve partner experience when using Microsoft Cloud Workshops
+Content to complement Microsoft Cloud Workshops
+
+* [Container and DevOps](https://github.com/carlosalexei/partnerbootcamp/tree/master/AppDev/ContainerAndDevOps)
+
+
